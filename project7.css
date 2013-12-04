@@ -1,0 +1,21 @@
+@viewport {width:device-width; zoom:1;}
+
+* {-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+
+body {margin:1em;}
+img {max-width:100%;}
+
+
+@media only screen and (min-width:400px) {
+  nav {width:48%; float:left;}
+  main {width:50%;
+float:left;
+width:50%;}
+}
+
+
+@media only screen and (min-width:800px) {
+  img {float:right; max-width:40%; margin:0 0 1em 2em;}
+}
+
+
