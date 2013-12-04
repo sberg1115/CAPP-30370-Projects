@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Javascript 1</title>
+  <style>
+    html {margin:2em; font-family:Helvetica, Arial, sans-serif;}
+    h1 {margin:0;}
+    h2 {color:#369;}
+  </style>
+</head>
+<body>
+  <header><h1>Javascript 1</h1></header>
+
+  <h2>Number 1</h2>
+
+
+<button id="one">Alert</button>
+<script>
+document.getElementById('one').addEventListener("click", function(){
+	alert('You clicked a button');
+;})
+</script>
+
+  <h2>Number 2</h2>
+
+    
+   <button id="two">Prompt</button>
+   <script>
+   document.getElementById('two').addEventListener("click", function(){
+	var input_name = prompt ('What is your name?');
+	for (i=0; i<5; i++) {
+	console.log(input_name);
+	}
+}); 
+  </script>
+  
+  
+<h2>Number 3</h2>  
+
+<script>
+var colors = ["Red", "Orange", "Yellow", "Green", "Blue", "Purple"]
+
+for(i = 0; i < colors.length; i++){
+document.write(colors[i] + "<br>"); 
+}
+    </script>
+    
+<h2>Number 4</h2>
+<div id ="box"></div>
+
+<style>
+#box {
+  width: 100px;
+  height: 100px;
+  background: red;
+</style>
+
+  
+<script>
+var mouseEvents = document.getElementById("box");
+mouseEvents.addEventListener("mouseenter", function(){
+    console.log( 'Mouse entered the box');
+})
+mouseEvents.addEventListener("mouseleave", function(){
+    console.log( 'Mouse left the box');
+});
+</script>
+
+
+<h2>Number 5</h2>
+  
+    <input type="text" id="First"> <input type="text" id="Second">
+  <button id="check">Check</button>
+    
+    <script>
+var checkbutton = document.getElementById("check");
+checkbutton.addEventListener("click", function() {
+      if(document.getElementById("First").value === document.getElementById("Second").value){
+    alert("Equal");
+  } 
+  else {
+    alert("Not Equal");
+  };
+});
+    </script>
+    
+    </body>
+
+</html>
